@@ -1,26 +1,106 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="es">
     <head>
         <title>Tienda en linea</title>
         <meta charset="UTF-8">
+        <meta name="description" content="Pagina de la leccion 2"/>
+        <meta name="keywords" content="html5, css, web, fidelitas"/>
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
     </head>
-    <body>
-        <div style="color: red;">
-            <h1>Hola</h1>
-            <p>Bienvenidos a la pagina de la tienda en linea</p>
-        </div>
-        
-        <p>Lorem ipsum dolor sit amet consectetur adipiscing, elit etiam urna mus vestibulum duis sem, dignissim ante arcu fringilla vitae. Taciti viverra phasellus quam mauris ultricies duis justo penatibus, senectus posuere mollis leo sollicitudin quis ad sociosqu donec, mi nascetur auctor tincidunt orci etiam rutrum. Natoque pulvinar condimentum massa morbi interdum cubilia justo sapien, tortor faucibus nulla ligula congue in sed enim, vulputate a etiam et velit aliquam bibendum</p>
-        <p>Taciti phasellus congue et per gravida cursus scelerisque vestibulum varius suspendisse, risus posuere mollis in ligula felis platea volutpat malesuada, blandit feugiat donec libero bibendum primis tortor ultrices nostra. Sem eget massa dis class viverra eu taciti imperdiet vitae ante, suspendisse iaculis in enim etiam cursus non bibendum augue placerat, mus fringilla hendrerit vulputate at rhoncus venenatis et torquent. Arcu orci fames gravida nascetur erat urna mattis class tincidunt ut sem, posuere ante congue egestas netus luctus nibh libero rutrum</p>
-        <p>Aliquam erat ac mattis accumsan massa et blandit ad, eros tincidunt nec curabitur nascetur porta dictum, semper euismod odio ullamcorper litora justo duis. Tempus commodo orci parturient vivamus iaculis nunc lectus primis quisque, dictumst ante convallis fusce habitant auctor aenean class per malesuada, phasellus sem id est dapibus justo viverra libero. Nisi nibh duis bibendum ridiculus vulputate mi tellus condimentum lacinia commodo tincidunt, vivamus rutrum velit sagittis pulvinar convallis proin est natoque. Nisl fusce justo nam faucibus mauris a augue dignissim, per velit cum consequat ullamcorper senectus donec, tristique proin quisque gravida rutrum cursus tempus.</p>
-        
-        <br/>
-        <br/>
-        <br/>
-        <br/>
     
-        <p>Ultima linea</p>
+    
+    <body>
+        <!-- Esta etiqueta indica al navegador que es un encabezado-->
+        <header id="encabezado">
+            <h1>Tienda en linea</h1>
+            <br/>
+            
+        </header>
+        
+        <!-- Esta etiqueta indica al navegador que es un nav-->
+        <nav id="menu">
+            <a href="ejemplo8.html">Atras</a>
+            <a href="index.html">Home</a>
+            <a href="ejemplo1.html">Adelante</a>
+        </nav>
+        
+        <aside id="barraLateral">
+            <h2>Productos mas vendidos</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing, elit etiam urna mus vestibulum duis sem, dignissim ante arcu fringilla vitae. Taciti viverra phasellus quam mauris ultricies duis justo penatibus, senectus posuere mollis leo sollicitudin quis ad sociosqu donec, mi nascetur auctor tincidunt orci etiam rutrum. Natoque pulvinar condimentum massa morbi interdum cubilia justo sapien, tortor faucibus nulla ligula congue in sed enim, vulputate a etiam et velit aliquam bibendum</p>
+        </aside>
+        
+        <section id="contenido">
+            <h2>Articulos Principales</h2>
+            <article>
+                <header>Asus VivoBook</header>
+                <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipiscing, elit etiam urna mus vestibulum duis sem, dignissim ante arcu fringilla vitae.</p>
+                <figure>
+                    <img src="imagenes/Equipo1.png" alt="Asus vivobook" width="200"/>
+                    <figcaption>Imagen con fines ilustrativos</figcaption>
+                </figure>
+            </article>
+            <article>
+                <header>Alienware ATD900</header>
+                <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipiscing, elit etiam urna mus vestibulum duis sem, dignissim ante arcu fringilla vitae.</p>
+                <figure>
+                    <img src="imagenes/Equipo2.png" alt="Asus vivobook" width="200"/>
+                    <figcaption>Mas vendido</figcaption>
+                </figure>
+            </article>
+            <article>
+                <header>Impresora 3D</header>
+                <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipiscing, elit etiam urna mus vestibulum duis sem, dignissim ante arcu fringilla vitae.</p>
+                <figure>
+                    <img src="imagenes/Equipo3.png" alt="Asus vivobook" width="200"/>
+                    <figcaption>Mas economico</figcaption>
+                </figure>
+            </article>
+            <br/>
+            <br/>
+            <section>
+                <article>
+                    <h2>Lineas de productos</h2>
+                    <table border="0">
+                        <thead id="encabezadoTabla">
+                            <tr>
+                                <th>Codigo</th>
+                                <th>Descripcion</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tablaResumen">
+                            <tr>
+                                <td>1</td>
+                                <td>Teclados</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Monitores</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Portatiles</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Perifericos</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Baterias</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Headsets</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+            </section>
+            <footer id="piePagina">
+                Derechos reservados &COPY; 2023 <address class="direccion">Alajuela</address> <address class="direccion">Tel: 85796443</address>
+            </footer>
+            
         
     </body>
 </html>
