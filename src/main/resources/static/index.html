@@ -7,23 +7,24 @@
         <meta name="description" content="Pagina de la leccion 2"/>
         <meta name="keywords" content="html5, css, web, fidelitas"/>
         <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+        <link href="css/menu.css" rel="stylesheet" type="text/css"/>
     </head>
     
     
     <body>
-        <!-- Esta etiqueta indica al navegador que es un encabezado-->
-        <header id="encabezado">
-            <h1>Tienda en linea</h1>
-            <br/>
-            
+        <header class="header">
+            <nav class="nav">
+                <a href="index.html" class="logo nav-link">Techshop</a>
+                <ul class="nav-menu">
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="ejemplo8.html">&LeftTriangleBar;</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="ejemplo.html">&RightTriangleBar;</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="audios.html">Audios</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="videos.html">Videos</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="iframes.html">iFrames</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="formularios.html">Formularios</a></li>
+                </ul>
+            </nav>
         </header>
-        
-        <!-- Esta etiqueta indica al navegador que es un nav-->
-        <nav id="menu">
-            <a href="ejemplo8.html">Atras</a>
-            <a href="index.html">Home</a>
-            <a href="ejemplo1.html">Adelante</a>
-        </nav>
         
         <aside id="barraLateral">
             <h2>Productos mas vendidos</h2>
@@ -97,6 +98,7 @@
                     </table>
                 </article>
             </section>
+        </section>
             <footer id="piePagina">
                 Derechos reservados &COPY; 2023 <address class="direccion">Alajuela</address> <address class="direccion">Tel: 85796443</address>
             </footer>
