@@ -18,7 +18,7 @@ public class ClienteController {
         var clientes = clienteService.getClientes();
         //var clientes = Arrays.asList();
         model.addAttribute("clientes", clientes);
-        return "/clientes/listado";
+        return "/cliente/listado";
     }
     
     @Autowired
