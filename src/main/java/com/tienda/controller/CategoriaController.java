@@ -13,16 +13,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class CategoriaController {
     
-    @GetMapping("/categoria/listado")
-    public String inicio(Model model) {
-        var categoria = categoriaService.getCategorias(false);
-        //var categoria = Arrays.asList();
-        model.addAttribute("categoria", categoria);
-        return "/categoria/listado";
-    }
-    
     @Autowired
     CategoriaService categoriaService;
+    
+    @GetMapping("/categoria/listado")
+    public String inicio(Model model) {
+        var categorias = categoriaService.getCategorias(false);
+        //var categoria = Arrays.asList();
+        model.addAttribute("categoria", categorias);
+        return "/categoria/listado";
+    }
     
     @GetMapping("/categoria/nuevo")
     public String nuevoCategoria(Categoria categoria){

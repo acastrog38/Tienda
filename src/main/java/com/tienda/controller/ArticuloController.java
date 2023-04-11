@@ -14,20 +14,20 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class ArticuloController {
     
-    @GetMapping("/articulo/listado")
-    public String inicio(Model model) {
-        var articulo = articuloService.getArticulos(false);
-        //var articulo = Arrays.asList();
-        model.addAttribute("articulo", articulo);
-        return "/articulo/listado";
-    }
-    
     @Autowired
     ArticuloService articuloService;
     
     @Autowired
     CategoriaService categoriaService;
     
+    @GetMapping("/articulo/listado")
+    public String inicio(Model model) {
+        var articulos = articuloService.getArticulos(false);
+        //var articulo = Arrays.asList();
+        model.addAttribute("articulo", articulos);
+        return "/articulo/listado";
+    }
+     
     @GetMapping("/articulo/nuevo")
     public String nuevoArticulo(Articulo articulo, Model model){
         var categorias = categoriaService.getCategorias(true);

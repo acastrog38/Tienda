@@ -15,13 +15,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
-/**
- *
- * @author acast
- */
 @Slf4j
 @Controller
-
 public class IndexController {
     
     @Autowired
@@ -30,17 +25,7 @@ public class IndexController {
     @GetMapping("/")
     public String inicio(Model model) {
         log.info("Ahora utilizando MVC");
-//        String mensaje = "Estamos en semana 4, saludos!";
-//        //String fecha = new Date().toString();
-//        model.addAttribute("MensajeSaludo", mensaje);
-//        //model.addAttribute("fecha", fecha);
-//        
-//        Cliente cliente = new Cliente("Alejandro", "Castro Garcia", "acastrog38@gmail.com", "85796443");
-//        Cliente cliente2 = new Cliente("Fracisco", "Gamboa Araya", "faraya@gmail.com", "87946521");
-//        //model.addAttribute("cliente", cliente);
-//        
-//        List<Cliente> clientes = Arrays.asList(cliente, cliente2);
-//        
+
         var clientes = clienteService.getClientes();
         //var clientes = Arrays.asList();
         model.addAttribute("clientes", clientes);

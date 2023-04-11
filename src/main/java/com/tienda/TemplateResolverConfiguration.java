@@ -8,7 +8,9 @@ import org.thymeleaf.templatemode.TemplateMode;
 
 @Configuration
 public class TemplateResolverConfiguration {
-    @Bean    public SpringResourceTemplateResolver TemplateResolver_0() {
+    
+    @Bean
+    public SpringResourceTemplateResolver TemplateResolver_0() {
         SpringResourceTemplateResolver templateResolver = new SpringResourceTemplateResolver();
         templateResolver.setPrefix("classpath:/templates");
         templateResolver.setSuffix(".html");
@@ -16,9 +18,11 @@ public class TemplateResolverConfiguration {
         templateResolver.setCharacterEncoding("UTF-8");
         templateResolver.setOrder(0);
         templateResolver.setCheckExistence(true);
-        return templateResolver;            
+        return templateResolver;
     }
-    @Bean    public SpringResourceTemplateResolver TemplateResolver_1() {
+
+    @Bean
+    public SpringResourceTemplateResolver TemplateResolver_1() {
         SpringResourceTemplateResolver templateResolver = new SpringResourceTemplateResolver();
         templateResolver.setPrefix("templates/categoria/");
         templateResolver.setSuffix(".html");
@@ -26,9 +30,11 @@ public class TemplateResolverConfiguration {
         templateResolver.setCharacterEncoding("UTF-8");
         templateResolver.setOrder(1);
         templateResolver.setCheckExistence(true);
-        return templateResolver;            
+        return templateResolver;
     }
-    @Bean    public SpringResourceTemplateResolver TemplateResolver_2() {
+
+    @Bean
+    public SpringResourceTemplateResolver TemplateResolver_2() {
         SpringResourceTemplateResolver templateResolver = new SpringResourceTemplateResolver();
         templateResolver.setPrefix("templates/articulo/");
         templateResolver.setSuffix(".html");
@@ -36,9 +42,11 @@ public class TemplateResolverConfiguration {
         templateResolver.setCharacterEncoding("UTF-8");
         templateResolver.setOrder(2);
         templateResolver.setCheckExistence(true);
-        return templateResolver;            
+        return templateResolver;
     }
-    @Bean    public SpringResourceTemplateResolver TemplateResolver_3() {
+
+    @Bean
+    public SpringResourceTemplateResolver TemplateResolver_3() {
         SpringResourceTemplateResolver templateResolver = new SpringResourceTemplateResolver();
         templateResolver.setPrefix("templates/cliente/");
         templateResolver.setSuffix(".html");
@@ -46,7 +54,7 @@ public class TemplateResolverConfiguration {
         templateResolver.setCharacterEncoding("UTF-8");
         templateResolver.setOrder(3);
         templateResolver.setCheckExistence(true);
-        return templateResolver;            
+        return templateResolver;
     }
 }
     

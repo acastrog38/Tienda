@@ -35,7 +35,7 @@ public class ClienteServiceImpl implements ClienteService {
     
     @Override
     @Transactional
-    public void save(Cliente cliente) { //Cliente: idCliente = 0
+    public void save(Cliente cliente) { //Metodo abarca 2 escenarios, si existe, y si no existe
         Credito credito = cliente.getCredito();
         credito  = creditoDao.save(credito);
         

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" 
+      xmlns-="http://www.w3.org/1999/xhtml">
     <head>
         <title>TechShop</title>
         <meta charset="UTF-8">
@@ -14,12 +15,14 @@
             <div th:if="${clientes != null and !clientes.empty}">
                 <table border="1">
                     <thead>
-                    <th>Nombre</th>
-                    <th>Apellidos</th>
-                    <th>Correo</th>
-                    <th>Telefono</th>
-                    <th>Limite</th>
-                    <th colspan="2">Acciones</th>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellidos</th>
+                            <th>Correo</th>
+                            <th>Telefono</th>
+                            <th>Limite</th>
+                            <th colspan="2">Acciones</th>
+                        <tr>
                     </thead>
                     <tbody>
                         <tr th:each="cliente : ${clientes}">
