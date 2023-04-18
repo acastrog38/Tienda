@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
+    <head th:fragment="head">
         <title>Techshop</title>
         <meta charset="UTF-8">
+        <link rel="stylesheet" th:ref="@{/webjars/bootstrap/css/bootstrap.min.css}"/>
+        <link rel="stylesheet" th:ref="@{/webjars/font-awesome/css/all.css}"/>
+        <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+        <script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>
+        <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
     </head>
     <body>
         <header th:fragment="header" class="header">
@@ -11,7 +16,7 @@
                 <a href="@{/}" class="logo nav-link">Techshop</a>
                 <ul class="nav-menu">
                     <li class="nav-menu-item">
-                        <a th:href="@{/cliente/listado}" class="nav-menu-link nav-link
+                        <a th:href="@{/cliente/listado}" class="nav-menu-link nav-link"
                            th:text="#{plantilla.clientes}">Clientes</a>
                     </li>
                     <li class="nav-menu-item">
@@ -27,7 +32,7 @@
         </header>
         <footer th:fragment="footer" class="footer">
             <p>&COPY; [[#{plantilla.derechos}]]
-                <a th:href="@{/(lang=es)}">ES</a>
+                <a th:href="@{/(lang=es)}">ES</a> |
                 <a th:href="@{/(lang=en)}">EN</a>
             </p>
         </footer>
